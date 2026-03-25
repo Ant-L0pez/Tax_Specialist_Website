@@ -17,6 +17,15 @@
   <!-- Font Awesome 6 for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   
+  <!-- Three.js for 3D Globe -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.128.0/build/three.module.js"
+      }
+    }
+  </script>
+  
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -26,7 +35,7 @@
   <header>
     <nav>
       <div class="logo">
-        <img src="logo.png" alt="Fidelity Systems Inc" onerror="this.style.display='none'">
+        <img src="globe-10.gif" alt="Fidelity Systems Inc" onerror="this.style.display='none'">
         <div class="logo-text">
           <h1>Fidelity Income Tax</h1>
           <p>A Professional Tax Corporation</p>
@@ -55,10 +64,9 @@
       <h1 data-translate="heroTitle">Personal & Business Tax Specialists</h1>
       <p data-translate="heroText">Professional tax preparation and planning for individuals and businesses in Arlington, TX.</p>
       <div class="hero-contact">
-        <p><i class="fas fa-map-marker-alt"></i>  931 E Park Row Drive, Arlington, TX 76010</p>
-        <p><i class="far fa-clock"></i>  Mon – Fri: 9:00 AM – 7:00 PM</p>
-        <p><i class="far fa-clock"></i>  Sun: 10:00 AM – 5:00 PM</p>
-        <p><i class="fas fa-phone-alt"></i>  <a href="tel:+18172745699">(817) 274-5699</a> &nbsp;|&nbsp; <a href="tel:+18174605699">(817) 460-5699</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> 📍 931 E Park Row Drive, Arlington, TX 76010</p>
+        <p><i class="far fa-clock"></i> 🕒 Mon – Fri: 9:00 AM – 6:00 PM</p>
+        <p><i class="fas fa-phone-alt"></i> 📞 <a href="tel:+18172745699">(817) 274-5699</a> &nbsp;|&nbsp; <a href="tel:+18174605699">(817) 460-5699</a></p>
       </div>
       <div class="hero-buttons">
         <a class="btn btn-primary" href="appointments.html" data-translate="schedule">Schedule Appointment</a>
@@ -109,7 +117,7 @@
       </div>
     </section>
 
-    <!-- ==================== BOOK FEATURE SECTION (NEW) ==================== -->
+    <!-- ==================== BOOK FEATURE SECTION ==================== -->
     <section id="book" class="book-section">
       <div class="book-container">
         <div class="book-cover">
@@ -144,7 +152,7 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <span data-translate="bookRating">5.0 out of 5 stars</span>
+            <span data-translate="bookRating">5.0 out of 5 stars · Academic Excellence Award</span>
           </div>
           
           <div class="book-buttons">
@@ -156,10 +164,10 @@
             </a>
           </div>
           
-          <!--<div class="book-endorsements">
+          <div class="book-endorsements">
             <p><i class="fas fa-quote-left"></i> <span data-translate="endorsement">"A must-read for every tax professional. Dr. Fidelis brings unparalleled expertise to this critical topic."</span></p>
             <p class="endorser">— <span data-translate="endorser">Journal of Tax Practice & Research</span></p>
-          </div>-->
+          </div>
         </div>
       </div>
     </section>
@@ -241,5 +249,6 @@
   <!-- JavaScript Files -->
   <script src="translations.js"></script>
   <script src="script.js"></script>
+  <script src="globe.js"></script>
 </body>
 </html>
